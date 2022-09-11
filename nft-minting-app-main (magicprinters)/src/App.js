@@ -404,7 +404,7 @@ function App() {
                         <a href="" target="_blank" class="nav-tab" style={{
                                     textAlign: "center",
                                     fontWeight: "bold",
-                                    fontFamily: "customfont",
+                                    fontFamily: "exo2black",
                                     fontSize: "28px"
                                 }}>Magic Printers</a>
 
@@ -423,7 +423,7 @@ function App() {
                         <a href="" class="topnav-right nav-tab">BBB</a>
                         <a href="" class="topnav-right nav-tab">CCC</a> */}
                     </nav>
-                    
+
                     <s.SpacerLarge/>
 
                     <div class="flexbox-container">
@@ -438,7 +438,7 @@ function App() {
                             backgroundColor: "var(--secondary)",
                             color: "var(--secondary-text)",
                             fontFamily: "customfont",
-                            fontWeight: "normal",
+                            fontWeight: "bold",
                             borderRadius: "20px",
                             fontSize: "20px",
                             padding: "30px",

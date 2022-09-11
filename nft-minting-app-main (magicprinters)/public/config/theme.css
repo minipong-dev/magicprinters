@@ -20,6 +20,20 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "exo2bold";
+  src: url("./assets/Exo2-Bold.ttf") format('truetype');
+  /* font-weight: bold; */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "exo2black";
+  src: url("./assets/Exo2-Black.ttf") format('truetype');
+  /* font-weight: bold; */
+  font-style: normal;
+}
+
 .image {
   width: 100%;
 }
