@@ -459,6 +459,20 @@ function App() {
                     
                     <s.SpacerLarge/>
 
+                    <s.TextTitle
+
+                                style={{
+                                    textAlign: "center",
+                                    fontFamily: "exo2bold",
+                                    fontSize: 30,
+                                    color: "var(--primary-text)",
+                                }}
+                            >
+
+                                Utility Matters<br />
+
+                    </s.TextTitle>
+
                     <ResponsiveWrapper flex={1} style={{ padding: 25 }} test>
                         <s.Container flex={1} jc={"center"} ai={"center"}>
 
