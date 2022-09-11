@@ -10,6 +10,7 @@
 .container-bg {
   background-image: url("/config/images/bg.jpg");
   background-repeat: repeat;
+  background-size: 600px;
 }
 
 @font-face {

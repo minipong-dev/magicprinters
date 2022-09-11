@@ -84,7 +84,7 @@ export const LogoButtonImg = styled.img`
 export const StyledImg = styled.img`
 
   border-radius: 50px;
-  border: 5px #000000 solid;
+  border: 10px #ffffff solid;
   
   width: 250px;
   @media (min-width: 1440px) {
