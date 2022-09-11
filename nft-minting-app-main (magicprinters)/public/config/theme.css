@@ -270,4 +270,11 @@ section {
 .gallery-item {
   display: flex;
   max-width: 150px;
+  max-height: 200px;
+}
+
+.gallery-img {
+  max-width: 140px;
+  max-height: 140px;
+  border-radius: 4px;
 }
