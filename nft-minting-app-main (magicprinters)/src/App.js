@@ -394,10 +394,8 @@ function App() {
 
                 image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
 
-                class="container-bg"
-
             >
-                
+                <div class="container-bg">
                     <nav id="main-nav">
                         {/* <a href="" class="nav-tab">
                             <img class="nav-logo" src={metadataPrefix + "1"}/></a> */}
@@ -426,348 +424,349 @@ function App() {
                         <a href="" class="topnav-right nav-tab">CCC</a> */}
                     </nav>
 
-                <s.TextTitle
-                    style={{
-                        textAlign: "center",
-                        color: "var(--accent-text)",
-                        fontFamily: "customfont",
-                        fontWeight: "normal",
-                        //textShadow: "2px 2px blue",
-                    }}
-                >
-
-                    <br />
-                    <s.SpacerLarge/>
-                    <br />
-
-
-                </s.TextTitle>
-
-                <div class="flexbox-container">
-                    <StyledImg alt={"example"} src={"/config/images/printer.gif"} />
-                </div>
-
-                <div class="flexbox-container">
-                    <p style={{
-                        textAlign: "center",
-                        backgroundColor: "var(--secondary)",
-                        color: "var(--secondary-text)",
-                        fontFamily: "customfont",
-                        fontWeight: "normal",
-                        borderRadius: "20px",
-                        padding: "10px",
-                        width: "70%",
-                        margin: "40px auto",
-                        textAlign: "left",
-
-                    }}>
-                        Magic Printers will pave a golden standard in the NFT space after observing
-                        the successes and failures of prominent projects over the last 12 months.<br/><br/>
-
-                        NFT investors deserve unique utility that results in external value, which projects continuously fail to provide. Magic Printers were designed specifically
-                        to fulfill this longterm satisfaction that NFT investors seek through self sustaining initiatives.<br/><br/>
-
-                        Welcome to the Lost Realm!
-                    </p>
-                </div>
-                
-
-
-
-                <s.SpacerSmall />
-                <ResponsiveWrapper flex={1} style={{ padding: 25 }} test>
-                    <s.Container flex={1} jc={"center"} ai={"center"}>
-
-                    </s.Container>
-                    <s.SpacerLarge />
-                    <s.Container
-
-                        flex={1}
-                        jc={"center"}
-                        ai={"center"}
+                    <s.TextTitle
                         style={{
-                            backgroundColor: "(255,255,255)",
-                            padding: 10,
-                            borderRadius: 90,
-                            border: "0px solid var(--secondary)",
-                            boxShadow: "10px 10px 100px 10px rgba	(255,255,255)",
+                            textAlign: "center",
+                            color: "var(--accent-text)",
+                            fontFamily: "customfont",
+                            fontWeight: "normal",
+                            //textShadow: "2px 2px blue",
                         }}
                     >
 
-                        <s.TextTitle
+                        <br />
+                        <s.SpacerLarge/>
+                        <br />
 
+
+                    </s.TextTitle>
+
+                    <div class="flexbox-container">
+                        <StyledImg alt={"example"} src={"/config/images/printer.gif"} />
+                    </div>
+
+                    <div class="flexbox-container">
+                        <p style={{
+                            textAlign: "center",
+                            backgroundColor: "var(--secondary)",
+                            color: "var(--secondary-text)",
+                            fontFamily: "customfont",
+                            fontWeight: "normal",
+                            borderRadius: "20px",
+                            padding: "10px",
+                            width: "70%",
+                            margin: "40px auto",
+                            textAlign: "left",
+
+                        }}>
+                            Magic Printers will pave a golden standard in the NFT space after observing
+                            the successes and failures of prominent projects over the last 12 months.<br/><br/>
+
+                            NFT investors deserve unique utility that results in external value, which projects continuously fail to provide. Magic Printers were designed specifically
+                            to fulfill this longterm satisfaction that NFT investors seek through self sustaining initiatives.<br/><br/>
+
+                            Welcome to the Lost Realm!
+                        </p>
+                    </div>
+                    
+
+
+
+                    <s.SpacerSmall />
+                    <ResponsiveWrapper flex={1} style={{ padding: 25 }} test>
+                        <s.Container flex={1} jc={"center"} ai={"center"}>
+
+                        </s.Container>
+                        <s.SpacerLarge />
+                        <s.Container
+
+                            flex={1}
+                            jc={"center"}
+                            ai={"center"}
                             style={{
-                                textAlign: "center",
-                                fontSize: 40,
-                                fontWeight: "normal",
-                                color: "var(--accent-text)",
-                                fontFamily: "customfont",
-
+                                backgroundColor: "(255,255,255)",
+                                padding: 10,
+                                borderRadius: 90,
+                                border: "0px solid var(--secondary)",
+                                boxShadow: "10px 10px 100px 10px rgba	(255,255,255)",
                             }}
                         >
 
-                            <br />
-                            {data.totalSupply} / {CONFIG.MAX_SUPPLY}<br />
-                            <br />
+                            <s.TextTitle
 
-                        </s.TextTitle>
-                        <s.TextDescription
+                                style={{
+                                    textAlign: "center",
+                                    fontSize: 40,
+                                    fontWeight: "normal",
+                                    color: "var(--accent-text)",
+                                    fontFamily: "customfont",
 
-                            style={{
-                                textAlign: "center",
-                                color: "white",
-                                fontWeight: "normal",
-                                fontFamily: "customfont",
-                                fontSize: "14px"
+                                }}
+                            >
 
-                            }}
-                        >
-                            <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
-                                {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
-                            </StyledLink>
-                        </s.TextDescription>
-                        <s.SpacerXSmall />
-                        {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
-                            <>
-                                <s.TextTitle
+                                <br />
+                                {data.totalSupply} / {CONFIG.MAX_SUPPLY}<br />
+                                <br />
 
-                                    style={{
-                                        textAlign: "center",
-                                        color: "white",
-                                        fontFamily: "customfont",
-                                    }}
-                                >
-                                    The sale has ended.
+                            </s.TextTitle>
+                            <s.TextDescription
 
-                                </s.TextTitle>
-                                <s.TextDescription
+                                style={{
+                                    textAlign: "center",
+                                    color: "white",
+                                    fontWeight: "normal",
+                                    fontFamily: "customfont",
+                                    fontSize: "14px"
 
-                                    style={{
-                                        textAlign: "center",
-                                        color: "var(--accent-text)",
-                                        fontFamily: "customfont",
-                                    }}
-                                >
-                                    You can still find {CONFIG.NFT_NAME} on opensea
-
-                                </s.TextDescription>
-                                <s.SpacerSmall />
-                                <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
-                                    {CONFIG.MARKETPLACE}
+                                }}
+                            >
+                                <StyledLink target={"_blank"} href={CONFIG.SCAN_LINK}>
+                                    {truncate(CONFIG.CONTRACT_ADDRESS, 15)}
                                 </StyledLink>
-                                <s.SpacerSmall />
-                            </>
-                        ) : (
-                            <>
-                                <s.TextTitle
-                                    style={{
-                                        textAlign: "center",
-                                        color: "var(--accent-text)",
-                                        fontFamily: "customfont",
-                                        fontWeight: "normal",
-                                        //textShadow: "2px 2px blue", 
-                                    }}
-                                >
+                            </s.TextDescription>
+                            <s.SpacerXSmall />
+                            {Number(data.totalSupply) >= CONFIG.MAX_SUPPLY ? (
+                                <>
+                                    <s.TextTitle
 
-                                    1 FREE mint per whitelisted wallet.
+                                        style={{
+                                            textAlign: "center",
+                                            color: "white",
+                                            fontFamily: "customfont",
+                                        }}
+                                    >
+                                        The sale has ended.
 
-                                </s.TextTitle>
-                                <s.SpacerXSmall />
-                                <s.TextDescription
-                                    style={{
-                                        textAlign: "center",
-                                        color: "var(--accent-text)",
-                                        fontFamily: "customfont",
-                                    }}
-                                >
+                                    </s.TextTitle>
+                                    <s.TextDescription
+
+                                        style={{
+                                            textAlign: "center",
+                                            color: "var(--accent-text)",
+                                            fontFamily: "customfont",
+                                        }}
+                                    >
+                                        You can still find {CONFIG.NFT_NAME} on opensea
+
+                                    </s.TextDescription>
+                                    <s.SpacerSmall />
+                                    <StyledLink target={"_blank"} href={CONFIG.MARKETPLACE_LINK}>
+                                        {CONFIG.MARKETPLACE}
+                                    </StyledLink>
+                                    <s.SpacerSmall />
+                                </>
+                            ) : (
+                                <>
+                                    <s.TextTitle
+                                        style={{
+                                            textAlign: "center",
+                                            color: "var(--accent-text)",
+                                            fontFamily: "customfont",
+                                            fontWeight: "normal",
+                                            //textShadow: "2px 2px blue", 
+                                        }}
+                                    >
+
+                                        1 FREE mint per whitelisted wallet.
+
+                                    </s.TextTitle>
+                                    <s.SpacerXSmall />
+                                    <s.TextDescription
+                                        style={{
+                                            textAlign: "center",
+                                            color: "var(--accent-text)",
+                                            fontFamily: "customfont",
+                                        }}
+                                    >
 
 
-                                </s.TextDescription>
-                                <s.SpacerSmall />
-                                {blockchain.account === "" ||
-                                    blockchain.smartContract === null ? (
-                                    <s.Container ai={"center"} jc={"center"}>
-                                        <s.TextDescription
-
-                                            style={{
-                                                textAlign: "center",
-                                                color: "var(--accent-text)",
-                                                fontFamily: "customfont",
-                                            }}
-                                        >
-
-
-                                        </s.TextDescription>
-                                        <s.SpacerSmall />
-                                        <StyledButton
-                                            onClick={(e) => {
-                                                e.preventDefault();
-                                                dispatch(connect());
-                                                getData();
-                                            }}
-                                        > Connect
-                                            <br />
-
-
-
-                                        </StyledButton>
-                                        {blockchain.errorMsg !== "" ? (
-                                            <>
-                                                <s.SpacerSmall />
-                                                <s.TextDescription
-
-                                                    style={{
-                                                        textAlign: "center",
-                                                        color: "var(--accent-text)",
-                                                        fontFamily: "customfont",
-                                                    }}
-                                                >
-                                                    {blockchain.errorMsg}
-                                                </s.TextDescription>
-                                            </>
-                                        ) : null}
-                                    </s.Container>
-                                ) : (
-                                    <>
-
-                                        <s.TextDescription
-
-                                            style={{
-                                                textAlign: "center",
-                                                color: "var(--accent-text)",
-                                                fontFamily: "customfont",
-                                            }}
-                                        >
-                                            {feedback}
-                                        </s.TextDescription>
-                                        <s.SpacerMedium />
-                                        <s.Container ai={"center"} jc={"center"} fd={"row"}>
-                                            <StyledRoundButton
-
-                                                style={{ lineHeight: 0.4 }}
-                                                disabled={claimingNft ? 1 : 0}
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    decrementMintAmount();
-                                                }}
-                                            >
-                                                -
-                                            </StyledRoundButton>
-                                            <s.SpacerMedium />
+                                    </s.TextDescription>
+                                    <s.SpacerSmall />
+                                    {blockchain.account === "" ||
+                                        blockchain.smartContract === null ? (
+                                        <s.Container ai={"center"} jc={"center"}>
                                             <s.TextDescription
 
                                                 style={{
                                                     textAlign: "center",
                                                     color: "var(--accent-text)",
                                                     fontFamily: "customfont",
-                                                    fontSize: "20px",
                                                 }}
                                             >
 
-                                                {mintAmount}
+
                                             </s.TextDescription>
-                                            <s.SpacerMedium />
-                                            <StyledRoundButton
-                                                disabled={claimingNft ? 1 : 0}
-                                                onClick={(e) => {
-                                                    e.preventDefault();
-                                                    incrementMintAmount();
-                                                }}
-                                            >
-                                                +
-                                            </StyledRoundButton>
-                                        </s.Container>
-
-                                        <s.SpacerSmall />
-
-                                        <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                            <s.SpacerSmall />
                                             <StyledButton
-                                                disabled={claimingNft ? 1 : 0}
                                                 onClick={(e) => {
                                                     e.preventDefault();
-                                                    claimWhitelistNFTs();
+                                                    dispatch(connect());
                                                     getData();
                                                 }}
-                                            >
-                                                {claimingNft ? "PROCESSING" : "WL MINT"}
+                                            > Connect
+                                                <br />
+
+
+
                                             </StyledButton>
+                                            {blockchain.errorMsg !== "" ? (
+                                                <>
+                                                    <s.SpacerSmall />
+                                                    <s.TextDescription
+
+                                                        style={{
+                                                            textAlign: "center",
+                                                            color: "var(--accent-text)",
+                                                            fontFamily: "customfont",
+                                                        }}
+                                                    >
+                                                        {blockchain.errorMsg}
+                                                    </s.TextDescription>
+                                                </>
+                                            ) : null}
                                         </s.Container>
+                                    ) : (
+                                        <>
 
-                                    </>
-                                )}
-                            </>
-                        )}
+                                            <s.TextDescription
+
+                                                style={{
+                                                    textAlign: "center",
+                                                    color: "var(--accent-text)",
+                                                    fontFamily: "customfont",
+                                                }}
+                                            >
+                                                {feedback}
+                                            </s.TextDescription>
+                                            <s.SpacerMedium />
+                                            <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                                <StyledRoundButton
+
+                                                    style={{ lineHeight: 0.4 }}
+                                                    disabled={claimingNft ? 1 : 0}
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        decrementMintAmount();
+                                                    }}
+                                                >
+                                                    -
+                                                </StyledRoundButton>
+                                                <s.SpacerMedium />
+                                                <s.TextDescription
+
+                                                    style={{
+                                                        textAlign: "center",
+                                                        color: "var(--accent-text)",
+                                                        fontFamily: "customfont",
+                                                        fontSize: "20px",
+                                                    }}
+                                                >
+
+                                                    {mintAmount}
+                                                </s.TextDescription>
+                                                <s.SpacerMedium />
+                                                <StyledRoundButton
+                                                    disabled={claimingNft ? 1 : 0}
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        incrementMintAmount();
+                                                    }}
+                                                >
+                                                    +
+                                                </StyledRoundButton>
+                                            </s.Container>
+
+                                            <s.SpacerSmall />
+
+                                            <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                                <StyledButton
+                                                    disabled={claimingNft ? 1 : 0}
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        claimWhitelistNFTs();
+                                                        getData();
+                                                    }}
+                                                >
+                                                    {claimingNft ? "PROCESSING" : "WL MINT"}
+                                                </StyledButton>
+                                            </s.Container>
+
+                                        </>
+                                    )}
+                                </>
+                            )}
+                            <s.SpacerMedium />
+                        </s.Container>
+                        <s.SpacerLarge />
+                        <s.Container flex={1} jc={"center"} ai={"center"}>
+
+                        </s.Container>
+                    </ResponsiveWrapper>
+                    <s.Container jc={"center"} ai={"left"} style={{ width: "90%" }}>
+
+                        <s.TextDescription
+
+                            style={{
+                                textAlign: "center",
+                                color: "white",
+                                fontFamily: "customfont",
+                                fontSize: "30px",
+                                fontWeight: "900",
+
+                            }}
+
+                        >
+
+
+
+                        </s.TextDescription>
+
+
+                        <s.TextDescription
+
+                            style={{
+                                textAlign: "center",
+                                color: "white",
+                                fontFamily: "customfont",
+                                fontSize: "28px",
+                                fontWeight: "normal",
+
+                            }}
+
+                        >
+
+
+                            <br />
+                            <br />
+                            <a target="_blank" href={CONFIG.MARKETPLACE_LINK}>
+                                <LogoButtonImg src="/config/images/OS_LOGO.png" />
+                            </a>
+                            <a target="_blank" href="https://twitter.com/metalamboz">
+                                <LogoButtonImg src="/config/images/TWIT_LOGO.png" />
+                            </a>
+                            <a target="_blank" href={CONFIG.SCAN_LINK}>
+                                <LogoButtonImg src="/config/images/SCAN_LOGO.png" />
+                            </a>
+                            <br />
+                            <br />
+                            <a style={{
+                                display: "flex",
+                                justifyContent: "left",
+                                textAlign: "left",
+
+                            }} target="_blank" href="https://twitter.com/viperwarelabs">
+                                <FooterLogo alt={"Viperware"} src={"/config/images/ViperwareLogo.png"} />
+                            </a>
+
+
+                        </s.TextDescription>
                         <s.SpacerMedium />
-                    </s.Container>
-                    <s.SpacerLarge />
-                    <s.Container flex={1} jc={"center"} ai={"center"}>
+                        <s.Container>
+                        </s.Container>
 
                     </s.Container>
-                </ResponsiveWrapper>
-                <s.Container jc={"center"} ai={"left"} style={{ width: "90%" }}>
-
-                    <s.TextDescription
-
-                        style={{
-                            textAlign: "center",
-                            color: "white",
-                            fontFamily: "customfont",
-                            fontSize: "30px",
-                            fontWeight: "900",
-
-                        }}
-
-                    >
-
-
-
-                    </s.TextDescription>
-
-
-                    <s.TextDescription
-
-                        style={{
-                            textAlign: "center",
-                            color: "white",
-                            fontFamily: "customfont",
-                            fontSize: "28px",
-                            fontWeight: "normal",
-
-                        }}
-
-                    >
-
-
-                        <br />
-                        <br />
-                        <a target="_blank" href={CONFIG.MARKETPLACE_LINK}>
-                            <LogoButtonImg src="/config/images/OS_LOGO.png" />
-                        </a>
-                        <a target="_blank" href="https://twitter.com/metalamboz">
-                            <LogoButtonImg src="/config/images/TWIT_LOGO.png" />
-                        </a>
-                        <a target="_blank" href={CONFIG.SCAN_LINK}>
-                            <LogoButtonImg src="/config/images/SCAN_LOGO.png" />
-                        </a>
-                        <br />
-                        <br />
-                        <a style={{
-                            display: "flex",
-                            justifyContent: "left",
-                            textAlign: "left",
-
-                        }} target="_blank" href="https://twitter.com/viperwarelabs">
-                            <FooterLogo alt={"Viperware"} src={"/config/images/ViperwareLogo.png"} />
-                        </a>
-
-
-                    </s.TextDescription>
                     <s.SpacerMedium />
-                    <s.Container>
-                    </s.Container>
-
-                </s.Container>
-                <s.SpacerMedium />
+                </div>
             </s.Container >
         </s.Screen >
     );
