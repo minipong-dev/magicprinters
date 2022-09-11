@@ -87,9 +87,6 @@ export const StyledImg = styled.img`
   border: 5px #000000 solid;
   
   width: 250px;
-  @media (min-width: 900px) {
-    width: 85%;
-  }
   @media (min-width: 1440px) {
     width: 470px;
   }
@@ -446,26 +443,7 @@ function App() {
                 </s.TextTitle>
 
                 <div class="flexbox-container">
-                    <div class="flexbox-item flexbox-item-1">
-                        <StyledImg alt={"example"} src={"/config/images/lambo.jpeg"} />
-                    </div>
-                </div>
-
-                <div class="flexbox-container">
-                    <div class="flexbox-item flexbox-item-1">
-                            <s.TextDescription
-
-                                style={{
-                                    textAlign: "center",
-                                    color: "white",
-                                    fontWeight: "normal",
-                                    fontFamily: "customfont",
-                                    fontSize: "32px"
-                                }}
-                            >
-                                
-                            </s.TextDescription>
-                    </div>
+                    <StyledImg alt={"example"} src={"/config/images/printer.gif"} />
                 </div>
                 
 

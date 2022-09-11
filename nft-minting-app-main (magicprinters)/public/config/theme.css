@@ -21,8 +21,6 @@
 
 .flexbox-container {
   display: flex;
-  flex-flow: row wrap;
-  width: 85%;
 }
 
 .flexbox-item {
