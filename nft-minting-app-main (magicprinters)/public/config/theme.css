@@ -15,8 +15,8 @@
 
 @font-face {
   font-family: "customfont";
-  src: url("./assets/MagicPrinters-Exo2.ttf") format('truetype');
-  font-weight: bold;
+  src: url("./assets/Exo2-VariableFont_wght.ttf") format('truetype');
+  /* font-weight: bold; */
   font-style: normal;
 }
 
