@@ -404,14 +404,13 @@ function App() {
                         {/* <a href="" class="nav-tab">
                             <img class="nav-logo" src={metadataPrefix + "1"}/></a> */}
                             {/* <img class="nav-logo" src="https://ipfs.io/ipfs/bafybeih3kt5woi6qcv72t23xf66hrwceseevvhdmpcwxj6l2eln6fqng4e/1.png"/></a> */}
-                        <a href="" class="nav-tab">
-                            <img src="/config/images/PepeRoyaleLogo.png"
-                                style={{
-                                height: "100%",
-                                }}/>
-                        </a>
-                        <a href="https://medium.com/@peperoyale/pepe-royale-whitepaper-v1-0-683cae7e31e4"
-                                target="_blank" class="nav-tab">Whitepaper</a>
+                        
+                        <a href="" target="_blank" class="nav-tab" style={{
+                                    textAlign: "center",
+                                    fontWeight: "bold",
+                                    fontFamily: "customfont",
+                                    fontSize: "28px"
+                                }}>Whitepaper</a>
 
                         <input id="menu-toggle" type="checkbox" />
                         <label class='menu-button-container' for="menu-toggle">
