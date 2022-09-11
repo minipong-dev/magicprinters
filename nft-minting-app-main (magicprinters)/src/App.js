@@ -395,7 +395,7 @@ function App() {
                 flex={1}
                 ai={"center"}
 
-                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.png" : null}
+                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
 
 
             >
@@ -536,7 +536,7 @@ function App() {
                                     }}
                                 >
 
-                                    1 FREE lambo mint per whitelisted wallet.
+                                    1 FREE mint per whitelisted wallet.
 
                                 </s.TextTitle>
                                 <s.SpacerXSmall />
