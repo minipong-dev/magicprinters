@@ -472,6 +472,66 @@ function App() {
                                 Utility Matters<br />
 
                     </s.TextTitle>
+                    
+                    <s.SpacerLarge/>
+
+                    <s.TextTitle
+
+                                style={{
+                                    textAlign: "center",
+                                    fontFamily: "exo2bold",
+                                    fontSize: 30,
+                                    color: "var(--primary-text)",
+                                }}
+                            >
+
+                                Utility Matters<br />
+
+                    </s.TextTitle>
+                    
+                    <s.SpacerLarge/>
+
+                    <div class="info-gallery">
+                        <div class="gallery-item">
+                            <img src="/config/images/brain_token.gif"/>
+                            <p
+                                style={{
+                                    textAlign: "center",
+                                    fontFamily: "customfont",
+                                    fontSize: 20,
+                                    color: "var(--primary-text)",
+                                }}
+                            >
+                                Intelligence
+                            </p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/config/images/gemstone.gif"/>
+                            <p
+                                style={{
+                                    textAlign: "center",
+                                    fontFamily: "customfont",
+                                    fontSize: 20,
+                                    color: "var(--primary-text)",
+                                }}
+                            >
+                                Course Gems
+                            </p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="/config/images/magic_paper.gif"/>
+                            <p
+                                style={{
+                                    textAlign: "center",
+                                    fontFamily: "customfont",
+                                    fontSize: 20,
+                                    color: "var(--primary-text)",
+                                }}
+                            >
+                                Magic Papers
+                            </p>
+                        </div>
+                    </div>
 
                     <ResponsiveWrapper flex={1} style={{ padding: 25 }} test>
                         <s.Container flex={1} jc={"center"} ai={"center"}>
