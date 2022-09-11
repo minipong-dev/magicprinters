@@ -410,7 +410,7 @@ function App() {
                                     fontWeight: "bold",
                                     fontFamily: "customfont",
                                     fontSize: "28px"
-                                }}>Whitepaper</a>
+                                }}>Magic Printers</a>
 
                         <input id="menu-toggle" type="checkbox" />
                         <label class='menu-button-container' for="menu-toggle">
