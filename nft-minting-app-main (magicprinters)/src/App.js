@@ -445,6 +445,27 @@ function App() {
                 <div class="flexbox-container">
                     <StyledImg alt={"example"} src={"/config/images/printer.gif"} />
                 </div>
+
+                <div class="flexbox-container">
+                    <p style={{
+                        textAlign: "center",
+                        backgroundColor: "var(--secondary)",
+                        color: "var(--secondary-text)",
+                        fontFamily: "customfont",
+                        fontWeight: "normal",
+                        borderRadius: "20px",
+                        padding: "10px",
+
+                    }}>
+                        Magic Printers will pave a golden standard in the NFT space after observing
+                        the successes and failures of prominent projects over the last 12 months.<br/><br/>
+
+                        NFT investors deserve unique utility that results in external value, which projects continuously fail to provide. Magic Printers were designed specifically
+                        to fulfill this longterm satisfaction that NFT investors seek through self sustaining initiatives.<br/><br/>
+
+                        Welcome to the Lost Realm!
+                    </p>
+                </div>
                 
 
 
