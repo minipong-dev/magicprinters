@@ -388,14 +388,14 @@ function App() {
     */
     return (
         <s.Screen>
-            <s.Container
-                flex={1}
-                ai={"center"}
+            <div class="container-bg">
+                <s.Container
+                    flex={1}
+                    ai={"center"}
 
-                image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
+                    //image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
 
-            >
-                <div class="container-bg">
+                >
                     <nav id="main-nav">
                         {/* <a href="" class="nav-tab">
                             <img class="nav-logo" src={metadataPrefix + "1"}/></a> */}
@@ -453,7 +453,8 @@ function App() {
                             fontFamily: "customfont",
                             fontWeight: "normal",
                             borderRadius: "20px",
-                            padding: "10px",
+                            fontSize: "20px",
+                            padding: "30px",
                             width: "70%",
                             margin: "40px auto",
                             textAlign: "left",
@@ -766,8 +767,8 @@ function App() {
 
                     </s.Container>
                     <s.SpacerMedium />
-                </div>
-            </s.Container >
+                </s.Container >
+            </div>
         </s.Screen >
     );
 }
