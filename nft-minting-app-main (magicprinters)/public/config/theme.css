@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "customfont";
-  src: url("./assets/MagicPrinters-Exo2.ttf") format('truetype');
+  src: url("./assets/Acme-Regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -22,7 +22,7 @@
 .flexbox-container {
   display: flex;
   flex-flow: row wrap;
-  width: 85%;
+  width: 65%;
 }
 
 .flexbox-item {
