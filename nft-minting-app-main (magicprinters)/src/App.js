@@ -394,6 +394,10 @@ function App() {
 
                 image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
 
+                style={{
+                    backgroundRepeat: "repeat",
+                }}
+
 
             >
                 
@@ -455,6 +459,9 @@ function App() {
                         fontWeight: "normal",
                         borderRadius: "20px",
                         padding: "10px",
+                        width: "70%",
+                        margin: "40px auto",
+                        textAlign: "left",
 
                     }}>
                         Magic Printers will pave a golden standard in the NFT space after observing
