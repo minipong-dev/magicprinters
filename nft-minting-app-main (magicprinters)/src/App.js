@@ -423,27 +423,14 @@ function App() {
                         <a href="" class="topnav-right nav-tab">BBB</a>
                         <a href="" class="topnav-right nav-tab">CCC</a> */}
                     </nav>
-
-                    <s.TextTitle
-                        style={{
-                            textAlign: "center",
-                            color: "var(--accent-text)",
-                            fontFamily: "customfont",
-                            fontWeight: "normal",
-                            //textShadow: "2px 2px blue",
-                        }}
-                    >
-
-                        <br />
-                        <s.SpacerLarge/>
-                        <br />
-
-
-                    </s.TextTitle>
+                    
+                    <s.SpacerLarge/>
 
                     <div class="flexbox-container">
                         <StyledImg alt={"example"} src={"/config/images/printer.gif"} />
                     </div>
+                    
+                    <s.SpacerLarge/>
 
                     <div class="flexbox-container">
                         <p style={{
@@ -455,8 +442,8 @@ function App() {
                             borderRadius: "20px",
                             fontSize: "20px",
                             padding: "30px",
-                            width: "70%",
-                            margin: "40px auto",
+                            width: "50%",
+                            margin: "auto",
                             textAlign: "left",
 
                         }}>
@@ -470,10 +457,8 @@ function App() {
                         </p>
                     </div>
                     
+                    <s.SpacerLarge/>
 
-
-
-                    <s.SpacerSmall />
                     <ResponsiveWrapper flex={1} style={{ padding: 25 }} test>
                         <s.Container flex={1} jc={"center"} ai={"center"}>
 
