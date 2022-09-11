@@ -484,6 +484,7 @@ function App() {
                                     fontFamily: "customfont",
                                     fontSize: 20,
                                     color: "var(--primary-text)",
+                                    margin: "5px auto",
                                 }}
                             >
                                 Intelligence
@@ -497,6 +498,7 @@ function App() {
                                     fontFamily: "customfont",
                                     fontSize: 20,
                                     color: "var(--primary-text)",
+                                    margin: "5px auto",
                                 }}
                             >
                                 Course Gems
@@ -510,6 +512,7 @@ function App() {
                                     fontFamily: "customfont",
                                     fontSize: 20,
                                     color: "var(--primary-text)",
+                                    margin: "5px auto",
                                 }}
                             >
                                 Magic Papers
