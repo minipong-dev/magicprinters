@@ -394,10 +394,7 @@ function App() {
 
                 image={CONFIG.SHOW_BACKGROUND ? "/config/images/bg.jpg" : null}
 
-                style={{
-                    backgroundRepeat: "repeat",
-                }}
-
+                class="container-bg"
 
             >
                 

@@ -1,5 +1,5 @@
 :root {
-  --primary: #ffffff;
+  --primary: #171040;
   --primary-text: #ffffff;
   --secondary: #ffffff;
   --secondary-text: #171040;
@@ -7,6 +7,9 @@
   --accent-text: #ffffff;
 }
 
+.container-bg {
+    background-repeat: repeat;
+}
 
 @font-face {
   font-family: "customfont";
