@@ -405,7 +405,7 @@ function App() {
                                     textAlign: "center",
                                     fontWeight: "bold",
                                     fontFamily: "exo2black",
-                                    fontSize: "28px"
+                                    fontSize: "36px"
                                 }}>Magic Printers</a>
 
                         <input id="menu-toggle" type="checkbox" />
