@@ -168,28 +168,10 @@ button {
 }
 
 /* Accordion */
-* {
-  box-sizing: border-box;
+.accordion {
+  font-family: exo2bold;
+  width: 80%;
 }
-*::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #7d98da;
-  display: flex;
-  min-height: 100vh;
-}
-
-.container {
-  margin: 0 auto;
-  padding: 4rem;
-  width: 48rem;
-}
-
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
 }
