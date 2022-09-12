@@ -555,6 +555,10 @@ function App() {
                     <h2 style={{
                         fontFamily: "exo2bold",
                         fontSize: "28px",
+                        backgroundColor: "white",
+                        width: "100%",
+                        textAlign: "center",
+                        padding: "15px",
                     }}>Frequently Asked Questions</h2>
                     <s.SpacerMedium/>
                     <div class="accordion">
