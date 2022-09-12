@@ -59,6 +59,7 @@
   max-height: 150px;
   border-radius: 8px;
   transform: translate(0px, 50px);
+  margin: auto;
 }
 
 .gallery-subimg {
