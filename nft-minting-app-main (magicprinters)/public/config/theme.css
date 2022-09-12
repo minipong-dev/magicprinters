@@ -55,6 +55,14 @@
   max-width: 150px;
   max-height: 150px;
   border-radius: 8px;
+  transform: translate(0px, 30px);
+}
+
+.gallery-subimg {
+  background-color: white;
+  height: 70px;
+  width: 100%;
+  border-radius: 8px;
 }
 
 .image {

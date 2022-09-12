@@ -429,7 +429,25 @@ function App() {
                     <div class="flexbox-container">
                         <StyledImg alt={"example"} src={"/config/images/printer.gif"} />
                     </div>
-                    
+
+                    <s.SpacerLarge/>
+
+                    <s.TextTitle
+
+                                style={{
+                                    textAlign: "center",
+                                    fontFamily: "exo2bold",
+                                    fontSize: 30,
+                                    color: "var(--primary-text)",
+                                    display: "flex",
+                                    flexWrap: "wrap"
+                                }}
+                            >
+
+                                Printing a strong future for NFT investors!<br />
+
+                    </s.TextTitle>
+
                     <s.SpacerLarge/>
 
                     <div class="flexbox-container">
@@ -465,6 +483,7 @@ function App() {
                     <div class="info-gallery">
                         <div class="gallery-item">
                             <img class="gallery-img" src="/config/images/brain_token.gif"/>
+                            <div class="gallery-subimg"></div>
                             <p
                                 style={{
                                     textAlign: "center",
@@ -479,6 +498,7 @@ function App() {
                         </div>
                         <div class="gallery-item">
                             <img class="gallery-img" src="/config/images/gemstone.gif"/>
+                            <div class="gallery-subimg"></div>
                             <p
                                 style={{
                                     textAlign: "center",
@@ -492,7 +512,8 @@ function App() {
                             </p>
                         </div>
                         <div class="gallery-item">
-                            <img class="gallery-img" src="/config/images/magic_paper.gif"/>
+                            <img class="gallery-img" src="/config/images/brain_token.gif"/>
+                            <div class="gallery-subimg"></div>
                             <p
                                 style={{
                                     textAlign: "center",
