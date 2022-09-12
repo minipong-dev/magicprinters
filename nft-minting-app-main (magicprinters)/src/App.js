@@ -433,20 +433,7 @@ function App() {
                     <s.SpacerLarge/>
 
                     <div class="flexbox-container">
-                        <p style={{
-                            textAlign: "center",
-                            backgroundColor: "var(--secondary)",
-                            color: "var(--secondary-text)",
-                            fontFamily: "customfont",
-                            fontWeight: "bold",
-                            borderRadius: "20px",
-                            fontSize: "20px",
-                            padding: "30px",
-                            width: "50%",
-                            margin: "auto",
-                            textAlign: "left",
-
-                        }}>
+                        <p class="description-container">
                             Magic Printers will pave a golden standard in the NFT space after observing
                             the successes and failures of prominent projects over the last 12 months.<br/><br/>
 
@@ -481,7 +468,7 @@ function App() {
                             <p
                                 style={{
                                     textAlign: "center",
-                                    fontFamily: "customfont",
+                                    fontFamily: "exo2black",
                                     fontSize: 20,
                                     color: "var(--primary-text)",
                                     margin: "5px auto",
@@ -495,7 +482,7 @@ function App() {
                             <p
                                 style={{
                                     textAlign: "center",
-                                    fontFamily: "customfont",
+                                    fontFamily: "exo2black",
                                     fontSize: 20,
                                     color: "var(--primary-text)",
                                     margin: "5px auto",
@@ -509,7 +496,7 @@ function App() {
                             <p
                                 style={{
                                     textAlign: "center",
-                                    fontFamily: "customfont",
+                                    fontFamily: "exo2black",
                                     fontSize: 20,
                                     color: "var(--primary-text)",
                                     margin: "5px auto",
