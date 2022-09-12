@@ -552,7 +552,11 @@ function App() {
                     <s.SpacerLarge/>
                     <s.SpacerLarge/>
 
-                    <h2>Frequently Asked Questions</h2>
+                    <h2 style={{
+                        fontFamily: "exo2bold",
+                        fontSize: "28px",
+                    }}>Frequently Asked Questions</h2>
+                    <s.SpacerMedium/>
                     <div class="accordion">
                         <div class="accordion-item">
                         <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
