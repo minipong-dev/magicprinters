@@ -178,7 +178,6 @@ button {
 body {
   margin: 0;
   padding: 0;
-  font-family: "exo2bold";
   background: #fff;
   color: #4d5974;
   display: flex;
@@ -221,6 +220,7 @@ body {
 }
 .accordion button .accordion-title {
   padding: 1em 1.5em 1em 0;
+  font-family: exo2bold;
 }
 .accordion button .icon {
   display: inline-block;

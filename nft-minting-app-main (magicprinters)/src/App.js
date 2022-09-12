@@ -468,6 +468,7 @@ function App() {
 
                     <s.SpacerLarge/>
 
+
                     <div class="flexbox-container">
                         <p class="description-container">
                             Magic Printers will pave a golden standard in the NFT space after observing
@@ -546,6 +547,9 @@ function App() {
                         </div>
                     </div>
                     
+                    <s.SpacerLarge/>
+                    <s.SpacerLarge/>
+                    <s.SpacerLarge/>
                     <s.SpacerLarge/>
 
                     <h2>Frequently Asked Questions</h2>
