@@ -482,7 +482,7 @@ function App() {
 
                     <div class="info-gallery">
                         <div class="gallery-item">
-                            <img class="gallery-img" src="/config/images/brain_token.gif"/>
+                            <img class="gallery-img" src="/config/images/brain_token_crop.gif"/>
                             <div class="gallery-subimg"></div>
                             <p
                                 style={{
@@ -497,7 +497,7 @@ function App() {
                             </p>
                         </div>
                         <div class="gallery-item">
-                            <img class="gallery-img" src="/config/images/gemstone.gif"/>
+                            <img class="gallery-img" src="/config/images/gemstone_crop.gif"/>
                             <div class="gallery-subimg"></div>
                             <p
                                 style={{
@@ -512,7 +512,7 @@ function App() {
                             </p>
                         </div>
                         <div class="gallery-item">
-                            <img class="gallery-img" src="/config/images/brain_token.gif"/>
+                            <img class="gallery-img" src="/config/images/brain_token_crop.gif"/>
                             <div class="gallery-subimg"></div>
                             <p
                                 style={{
