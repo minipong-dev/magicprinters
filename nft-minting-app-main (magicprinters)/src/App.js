@@ -559,7 +559,7 @@ function App() {
                         width: "100%",
                         textAlign: "center",
                         padding: "15px",
-                    }}>Frequently Asked Questions</h2>
+                    }}>Frequently Asked Questions BRUV</h2>
                     <s.SpacerMedium/>
                     <div class="accordion">
                         <div class="accordion-item">
