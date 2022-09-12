@@ -361,7 +361,7 @@ function App() {
         function toggleAccordion() {
         const itemToggle = this.getAttribute('aria-expanded');
         
-        for (i = 0; i < items.length; i++) {
+        for (let i = 0; i < items.length; i++) {
             items[i].setAttribute('aria-expanded', 'false');
         }
         
