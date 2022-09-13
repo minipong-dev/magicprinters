@@ -217,7 +217,8 @@ body {
   border: 1px solid #4a85dd;
 }
 .accordion button .accordion-title {
-  padding: 1em 1.5em 1em 0;
+  display: flex;
+  padding: 0 1.5em 0 0;
   font-family: exo2bold;
 }
 .accordion button .icon {
