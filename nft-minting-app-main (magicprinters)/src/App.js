@@ -531,7 +531,7 @@ function App() {
                             </p>
                         </div>
                         <div class="gallery-item">
-                            <img class="gallery-img" src="/config/images/brain_token_crop.gif"/>
+                            <img class="gallery-img" src="/config/images/swords_crop.gif"/>
                             <div class="gallery-subimg"></div>
                             <p
                                 style={{
@@ -542,7 +542,7 @@ function App() {
                                     margin: "5px auto",
                                 }}
                             >
-                                Magic Papers
+                                Faction Wars
                             </p>
                         </div>
                     </div>
