@@ -14,6 +14,7 @@ export const StyledButton = styled.button`
   border: none;
   background-color: white;
   padding: 15px;
+  font-family: exo2bold;
   font-weight: bold;
   color: black;
   cursor: pointer;
