@@ -424,7 +424,8 @@ function App() {
                                     textAlign: "center",
                                     fontWeight: "bold",
                                     fontFamily: "exo2black",
-                                    fontSize: "36px"
+                                    fontSize: "36px",
+                                    color: "#171040"
                                 }}>Magic Printers</a>
 
                         <input id="menu-toggle" type="checkbox" />
@@ -561,6 +562,7 @@ function App() {
                         textAlign: "center",
                         padding: "16px",
                         margin: "0px",
+                        color: "#171040"
                     }}>Frequently Asked Questions</h2>
                     <s.SpacerMedium/>
                     <div class="accordion">
@@ -864,11 +866,14 @@ function App() {
                             <a target="_blank" href={CONFIG.MARKETPLACE_LINK}>
                                 <LogoButtonImg src="/config/images/OS_LOGO.png" />
                             </a>
-                            <a target="_blank" href="https://twitter.com/metalamboz">
+                            <a target="_blank" href="https://twitter.com/MagicPrinters">
                                 <LogoButtonImg src="/config/images/TWIT_LOGO.png" />
                             </a>
                             <a target="_blank" href={CONFIG.SCAN_LINK}>
                                 <LogoButtonImg src="/config/images/SCAN_LOGO.png" />
+                            </a>
+                            <a target="_blank" href="https://medium.com/">
+                                <LogoButtonImg src="/config/images/MEDIUM_LOGO.png" />
                             </a>
                             <br />
                             <br />
