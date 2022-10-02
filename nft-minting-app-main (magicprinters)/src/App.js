@@ -434,14 +434,19 @@ function App() {
                         </label>
                         <div class="menu">
                             <li class="topnav-right nav-tab">
+                                <a href="https://twitter.com/MagicPrinters" class="topnav-right nav-tab">Twitter</a>
                             </li>
                             <li class="topnav-right nav-tab">
+                                <a href={CONFIG.MARKETPLACE_LINK} class="topnav-right nav-tab">Opensea</a>
+                            </li>
+                            <li class="topnav-right nav-tab">
+                                <a href={CONFIG.SCAN_LINK} class="topnav-right nav-tab">Etherscan</a>
                             </li>
                         </div>
                         
-                        <a href="https://twitter.com/MagicPrinters" class="topnav-right nav-tab">Twitter</a>
+                        {/* <a href="https://twitter.com/MagicPrinters" class="topnav-right nav-tab">Twitter</a>
                         <a href={CONFIG.MARKETPLACE_LINK} class="topnav-right nav-tab">Opensea</a>
-                        <a href={CONFIG.SCAN_LINK} class="topnav-right nav-tab">Etherscan</a>
+                        <a href={CONFIG.SCAN_LINK} class="topnav-right nav-tab">Etherscan</a> */}
                     </nav>
 
                     <s.SpacerLarge/>
