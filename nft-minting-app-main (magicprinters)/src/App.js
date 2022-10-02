@@ -566,34 +566,73 @@ function App() {
                     }}>Frequently Asked Questions</h2>
                     <s.SpacerMedium/>
                     <div class="accordion">
+
                         <div class="accordion-item">
-                        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">Why is the moon sometimes out during the day?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-1" aria-expanded="false"><span class="accordion-title">What are Magic Printers?</span><span class="icon" aria-hidden="true"></span></button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>Magic Printers are the entrance into the Lost Souls ecosystem. Each Magic Printer will be airdropped 5 Papers
+                                after mint, which are in turn used to mint the Lost Souls collection.</p>
                         </div>
                         </div>
+
                         <div class="accordion-item">
-                        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">Why is the sky blue?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-2" aria-expanded="false"><span class="accordion-title">What are Lost Souls?</span><span class="icon" aria-hidden="true"></span></button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p> Lost Souls are the investors who have been burned and abandoned by countless NFT projects. It’s time to educate the baseline, find exactly where
+                                you belong in web3, and show other founders exactly what utility should look like.<br/><br/>
+                                Lost Souls are a PFP collection embracing a timeless representation of character, fitting into no specific clique, while carrying their own unique
+                                identities.
+                                </p>
                         </div>
                         </div>
+
                         <div class="accordion-item">
-                        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">Will we ever discover aliens?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-3" aria-expanded="false"><span class="accordion-title">How many Magic Printers are there?</span><span class="icon" aria-hidden="true"></span></button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>There are a total of 4,444 Magic Printers, and there will be a total of 10,000 Lost Souls.</p>
                         </div>
                         </div>
+
                         <div class="accordion-item">
-                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">How much does the Earth weigh?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-4" aria-expanded="false"><span class="accordion-title">When is the mint?</span><span class="icon" aria-hidden="true"></span></button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>The Magic Printers Public sale and Whitelist sale will both take place at 1pm PST/4pm EST</p>
                         </div>
                         </div>
+
                         <div class="accordion-item">
-                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How do airplanes stay up?</span><span class="icon" aria-hidden="true"></span></button>
+                        <button id="accordion-button-5" aria-expanded="false"><span class="accordion-title">How much to mint a Magic Printer?</span><span class="icon" aria-hidden="true"></span></button>
                         <div class="accordion-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+                            <p>Public Sale: 0.04 ETH<br/><br/>
+                               Whitelist Sale: 0.03 ETH (Premint Winners)
+                            </p>
+                        </div>
+                        </div>
+
+                        <div class="accordion-item">
+                        <button id="accordion-button-6" aria-expanded="false"><span class="accordion-title">How is this mint process unique?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>After the Magic Printer mint stage is over, you will be presented with two options to mint a Lost Soul using the Paper you are airdropped from
+                                your Magic Printers. You can choose either Low Risk mint, which has an 80% chance of success, costs 1 Paper, and will result in a common Lost Soul,
+                                or High Risk mint, which has a 20% chance of success, costs 1 Paper, and will result in a higher ranking Lost Soul. This mint process is entirely
+                                unique, the choice is yours!</p>
+                        </div>
+                        </div>
+
+                        <div class="accordion-item">
+                        <button id="accordion-button-7" aria-expanded="false"><span class="accordion-title">What sort of utility will Magic Printers have?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>We are pursuing development on a branded educational platform that bridges an eager to learn web2 audience with web3.
+                                Holders of the Lost Souls collection will have the opportunity to mint limited edition web3 courses as NFTs,and either
+                                resell the courses, or pass on the knowledge to friends. Intelligence Token, Faction Wars, the Lost Merchant, and much
+                                more that we’re excited to pursue!</p>
+                        </div>
+                        </div>
+
+                        <div class="accordion-item">
+                        <button id="accordion-button-8" aria-expanded="false"><span class="accordion-title">Can we receive more Papers after the airdrop?</span><span class="icon" aria-hidden="true"></span></button>
+                        <div class="accordion-content">
+                            <p>For those seeking more exposure to the Lost Souls ecosystem, we will offer a public Paper bundle sale. Stay tuned!</p>
                         </div>
                         </div>
                     </div>
