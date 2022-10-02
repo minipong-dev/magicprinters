@@ -198,7 +198,7 @@ function App() {
             .then((receipt) => {
                 console.log(receipt);
                 setFeedback(
-                    `Enter The ${CONFIG.NFT_NAME}.`
+                    `Enjoy your new ${CONFIG.NFT_NAME}!`
                 );
                 setClaimingNft(false);
                 dispatch(fetchData(blockchain.account));
@@ -229,7 +229,7 @@ function App() {
             .then((receipt) => {
                 console.log(receipt);
                 setFeedback(
-                    `Enter The ${CONFIG.NFT_NAME}.`
+                    `Enjoy your new ${CONFIG.NFT_NAME}!`
                 );
                 setClaimingNft(false);
                 dispatch(fetchData(blockchain.account));
@@ -260,7 +260,7 @@ function App() {
             .then((receipt) => {
                 console.log(receipt);
                 setFeedback(
-                    `Enter The ${CONFIG.NFT_NAME}.`
+                    `Enjoy your new ${CONFIG.NFT_NAME}!`
                 );
                 setClaimingNft(false);
                 dispatch(fetchData(blockchain.account));
