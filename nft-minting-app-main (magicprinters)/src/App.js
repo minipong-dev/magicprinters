@@ -738,6 +738,7 @@ function App() {
 
                                         Public Mint: .04 ETH<br/>
                                         Whitelist Mint: .03 ETH<br/>
+                                        All mints enabled at 1pm PST/4pm EST<br/>
 
                                     </s.TextTitle>
                                     <s.SpacerXSmall />
@@ -901,7 +902,6 @@ function App() {
                                                     fontFamily: "customfont",
                                                     textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
                                                     zIndex: "10",
-                                                    width: "600px",
                                                 }}
                                             >
                                                 
@@ -917,7 +917,6 @@ function App() {
                                                     fontFamily: "customfont",
                                                     textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
                                                     zIndex: "10",
-                                                    width: "600px",
                                                 }}
                                             >
                                                 {!checkedFreeClaim ? "" : (onFreeClaim ? "Status: You are on the yuck pass free claim whitelist!" : "Status: You are not on the Yuck Pass free claim whitelist.")}
