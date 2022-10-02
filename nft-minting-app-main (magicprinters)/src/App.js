@@ -434,13 +434,25 @@ function App() {
                         </label>
                         <div class="menu">
                             <li class="topnav-right nav-tab">
-                                <a href="https://twitter.com/MagicPrinters" class="topnav-right nav-tab">Twitter</a>
+                                <a href="https://twitter.com/MagicPrinters" target="_blank" style={{
+                                        fontFamily: "exo2bold",
+                                        fontSize: "28px",
+                                        color: "#fff"
+                                    }}>Twitter</a>
                             </li>
                             <li class="topnav-right nav-tab">
-                                <a href={CONFIG.MARKETPLACE_LINK} class="topnav-right nav-tab">Opensea</a>
+                                <a href={CONFIG.MARKETPLACE_LINK} target="_blank" style={{
+                                        fontFamily: "exo2bold",
+                                        fontSize: "28px",
+                                        color: "#fff"
+                                    }}>Opensea</a>
                             </li>
                             <li class="topnav-right nav-tab">
-                                <a href={CONFIG.SCAN_LINK} class="topnav-right nav-tab">Etherscan</a>
+                                <a href={CONFIG.SCAN_LINK} target="_blank" style={{
+                                        fontFamily: "exo2bold",
+                                        fontSize: "28px",
+                                        color: "#fff"
+                                    }}>Etherscan</a>
                             </li>
                         </div>
                         
