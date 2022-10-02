@@ -896,7 +896,7 @@ function App() {
                                             <s.TextDescription
                                                 style={{
                                                     textAlign: "center",
-                                                    color: "#fff",
+                                                    color: onWhitelist ? "#32a641" : "#bd0707",
                                                     fontSize: "18px",
                                                     fontFamily: "exo2bold",
                                                     textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
@@ -905,7 +905,21 @@ function App() {
                                                 }}
                                             >
                                                 
-                                                {!checkedWhitelist ? "Check your whitelist status below" : (onWhitelist ? "Status: You are on the allowlist mint whitelist!" : "Status: You are not allowed to mint on whitelist.")}<br/>
+                                                {!checkedWhitelist ? "Check your whitelist status below" : (onWhitelist ? "Status: You are on the allowlist mint whitelist!" : "Status: You are not allowed to mint on whitelist.")}
+                                            
+                                            </s.TextDescription>
+
+                                            <s.TextDescription
+                                                style={{
+                                                    textAlign: "center",
+                                                    color: onFreeClaim ? "#32a641" : "#bd0707",
+                                                    fontSize: "18px",
+                                                    fontFamily: "exo2bold",
+                                                    textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
+                                                    zIndex: "10",
+                                                    width: "600px",
+                                                }}
+                                            >
                                                 {!checkedFreeClaim ? "" : (onFreeClaim ? "Status: You are on the yuck pass free claim whitelist!" : "Status: You are not on the Yuck Pass free claim whitelist.")}
                                             
                                             </s.TextDescription>
