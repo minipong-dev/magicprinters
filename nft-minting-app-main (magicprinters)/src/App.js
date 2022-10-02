@@ -897,10 +897,11 @@ function App() {
                                                 style={{
                                                     textAlign: "center",
                                                     color: "#fff",
-                                                    fontSize: "30px",
+                                                    fontSize: "18px",
                                                     fontFamily: "exo2bold",
                                                     textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
                                                     zIndex: "10",
+                                                    width: "600px",
                                                 }}
                                             >
                                                 
