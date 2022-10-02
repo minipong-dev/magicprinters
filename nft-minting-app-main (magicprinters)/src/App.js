@@ -163,99 +163,57 @@ function App() {
         NFT_NAME: "",
         SYMBOL: "",
         MAX_SUPPLY: 1,
-        WEI_COST: 0,
-        DISPLAY_COST: 0,
+        WEI_COST_WL: 0,
+        DISPLAY_COST_WL: 0,
+        WEI_COST_PUBLIC: 0,
+        DISPLAY_COST_PUBLIC: 0,
         GAS_LIMIT: 0,
         MARKETPLACE: "",
         MARKETPLACE_LINK: "",
         SHOW_BACKGROUND: false,
     });
 
-    const claimNFTs = async () => {
-        let cost = CONFIG.WEI_COST;
+    const freeClaimNFTs = () => {
+        //let cost = CONFIG.WEI_COST;
         let gasLimit = CONFIG.GAS_LIMIT;
-        let totalCostWei = String(cost * mintAmount);
-        gasLimit = (132705 + 3508 * (mintAmount - 1)) / mintAmount;
+        let freeMintAmount = 5;
+        let totalCostWei = String(0);
 
-        //mintedSoFar = data.mintedCount((blockchain.account).toString);
-        const mintedSoFar = await blockchain.smartContract.methods.mintedCount(blockchain.account).call(); // moose
-        console.log("Minted:");
-        console.log(mintedSoFar);
-        console.log("-");
+        let totalGasLimit = String(gasLimit * freeMintAmount);
 
-        //FREE Mint Cost
-        if (mintedSoFar <= 2) {
-            let freeMintsDecrement = mintAmount - (3 - mintedSoFar);
-            if (freeMintsDecrement < 0) freeMintsDecrement = 0;
-            totalCostWei = String(cost * (freeMintsDecrement));
-            gasLimit = (132705 + 3508 * (mintAmount - 1)) / mintAmount;
-            console.log(mintedSoFar);
-        }
+        blockchain.smartContract.methods
+            .claimFreePrinters(proof)
+            .send({
+                gasLimit: String(totalGasLimit),
+                to: CONFIG.CONTRACT_ADDRESS,
+                from: blockchain.account,
+                value: totalCostWei,
 
-        //FREE Mint Cost
-        /*if (mintAmount <= 2) {
-            totalCostWei = String(0);
-            gasLimit = (132705 + 3508 * (mintAmount - 1)) / mintAmount;
-        } else {
-            totalCostWei = String(cost * (mintAmount - 2));
-            gasLimit = (132705 + 3508 * (mintAmount - 1)) / mintAmount;
-        }*/
+            })
+            .once("error", (err) => {
+                console.log(err);
+                setFeedback("Sorry, something went wrong please try again later.");
+                setClaimingNft(false);
+            })
+            .then((receipt) => {
+                console.log(receipt);
+                setFeedback(
+                    `Enter The ${CONFIG.NFT_NAME}.`
+                );
+                setClaimingNft(false);
+                dispatch(fetchData(blockchain.account));
+            });
+    };
 
-        /*//FREE Mint Cost
-        if ((data.totalSupply) < 5555) {
-            totalCostWei = String(0);
-            gasLimit = (132705 + 3508 * (mintAmount - 1)) / mintAmount;
-        } else {
-            totalCostWei = String(cost * mintAmount);
-            gasLimit = (132705 + 3508 * (mintAmount - 1)) / mintAmount;
-        }*/
+    const publicMintNFTs = async () => {
+        //let cost = CONFIG.WEI_COST;
+        let gasLimit = CONFIG.GAS_LIMIT;
+        let totalCostWei = String(mintAmount * CONFIG.WEI_COST_PUBLIC);
 
         let totalGasLimit = String(gasLimit * mintAmount);
-        console.log("Cost: ", totalCostWei);
-        console.log("Gas limit: ", totalGasLimit);
-        setFeedback(`Enjoy your ${CONFIG.NFT_NAME}...`);
-        setClaimingNft(true);
+
         blockchain.smartContract.methods
-            .PUBLIC_MINT(mintAmount)
-            .send({
-                gasLimit: String(totalGasLimit),
-                to: CONFIG.CONTRACT_ADDRESS,
-                from: blockchain.account,
-                value: totalCostWei,
-
-            })
-            .once("error", (err) => {
-                console.log(err);
-                setFeedback("Sorry, something went wrong please try again later.");
-                setClaimingNft(false);
-            })
-            .then((receipt) => {
-                console.log(receipt);
-                setFeedback(
-                    `Enter The ${CONFIG.NFT_NAME}.`
-                );
-                setClaimingNft(false);
-                dispatch(fetchData(blockchain.account));
-            });
-
-    };
-
-    const claimFreeNFTs = () => {
-        //let cost = CONFIG.WEI_COST;
-        let gasLimit = CONFIG.GAS_LIMIT;
-        let freeMintAmount = 1;
-        let totalCostWei = String(0);
-
-        //FREE Mint Cost
-        gasLimit = (132705 + 3508 * (freeMintAmount - 1)) / freeMintAmount;
-
-        let totalGasLimit = String(gasLimit * freeMintAmount);
-        console.log("Cost: ", totalCostWei);
-        console.log("Gas limit: ", totalGasLimit);
-        setFeedback(`Enjoy your ${CONFIG.NFT_NAME}...`);
-        setClaimingNft(true);
-        blockchain.smartContract.methods
-            .mint(freeMintAmount)
+            .publicMintPrinter(mintAmount)
             .send({
                 gasLimit: String(totalGasLimit),
                 to: CONFIG.CONTRACT_ADDRESS,
@@ -278,27 +236,15 @@ function App() {
             });
     };
 
-    const claimWhitelistNFTs = () => {
+    const whitelistMintNFTs = () => {
         //let cost = CONFIG.WEI_COST;
         let gasLimit = CONFIG.GAS_LIMIT;
-        let freeMintAmount = 1;
-        let totalCostWei = String(0);
+        let totalCostWei = String(mintAmount * CONFIG.WEI_COST_WL);
 
-        //FREE Mint Cost
-        gasLimit = (132705 + 3508 * (freeMintAmount - 1)) / freeMintAmount;
+        let totalGasLimit = String(gasLimit * mintAmount);
 
-        let totalGasLimit = String(gasLimit * freeMintAmount);
-        console.log("Cost: ", totalCostWei);
-        console.log("Gas limit: ", totalGasLimit);
-        setFeedback(`Enjoy your ${CONFIG.NFT_NAME}...`);
-        setClaimingNft(true);
-
-        //contract.methods.safeMint(address, proof).send({ from: address }) // will be called on click of the mint button
-
-        blockchain.smartContract.methods.WHITELIST_MINT(proof).send({ from: blockchain.account })
-
-        /*blockchain.smartContract.methods
-            .safeMint(blockchain.account, proof)
+        blockchain.smartContract.methods
+            .whitelistMintPrinter(mintAmount, proof)
             .send({
                 gasLimit: String(totalGasLimit),
                 to: CONFIG.CONTRACT_ADDRESS,
@@ -318,7 +264,7 @@ function App() {
                 );
                 setClaimingNft(false);
                 dispatch(fetchData(blockchain.account));
-            });*/
+            });
 
     };
 
@@ -333,8 +279,8 @@ function App() {
 
     const incrementMintAmount = () => {
         let newMintAmount = mintAmount + 1;
-        if (newMintAmount > 10) {
-            newMintAmount = 10;
+        if (newMintAmount > 5) {
+            newMintAmount = 5;
         }
         setMintAmount(newMintAmount);
     };
@@ -867,7 +813,37 @@ function App() {
                                                     disabled={claimingNft ? 1 : 0}
                                                     onClick={(e) => {
                                                         e.preventDefault();
-                                                        claimWhitelistNFTs();
+                                                        publicMintNFTs();
+                                                        getData();
+                                                    }}
+                                                >
+                                                    {claimingNft ? "PROCESSING" : "WL MINT"}
+                                                </StyledButton>
+                                            </s.Container>
+
+                                            <s.SpacerSmall />
+
+                                            <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                                <StyledButton
+                                                    disabled={claimingNft ? 1 : 0}
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        whitelistMintNFTs();
+                                                        getData();
+                                                    }}
+                                                >
+                                                    {claimingNft ? "PROCESSING" : "WL MINT"}
+                                                </StyledButton>
+                                            </s.Container>
+
+                                            <s.SpacerSmall />
+
+                                            <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                                <StyledButton
+                                                    disabled={claimingNft ? 1 : 0}
+                                                    onClick={(e) => {
+                                                        e.preventDefault();
+                                                        freeClaimNFTs();
                                                         getData();
                                                     }}
                                                 >
