@@ -896,7 +896,7 @@ function App() {
                                             <s.TextDescription
                                                 style={{
                                                     textAlign: "center",
-                                                    color: onWhitelist ? "#32a641" : "#bd0707",
+                                                    color: checkedWhitelist ? (onWhitelist ? "#32a641" : "#bd0707") : "#fff",
                                                     fontSize: "18px",
                                                     fontFamily: "customfont",
                                                     textShadow: "-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000",
