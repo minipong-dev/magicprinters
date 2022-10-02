@@ -436,22 +436,25 @@ function App() {
                             <li class="topnav-right nav-tab">
                                 <a href="https://twitter.com/MagicPrinters" target="_blank" style={{
                                         fontFamily: "exo2bold",
-                                        fontSize: "28px",
-                                        color: "#fff"
+                                        fontSize: "26px",
+                                        color: "#fff",
+                                        textDecoration: "none",
                                     }}>Twitter</a>
                             </li>
                             <li class="topnav-right nav-tab">
                                 <a href={CONFIG.MARKETPLACE_LINK} target="_blank" style={{
                                         fontFamily: "exo2bold",
-                                        fontSize: "28px",
-                                        color: "#fff"
+                                        fontSize: "26px",
+                                        color: "#fff",
+                                        textDecoration: "none",
                                     }}>Opensea</a>
                             </li>
                             <li class="topnav-right nav-tab">
                                 <a href={CONFIG.SCAN_LINK} target="_blank" style={{
                                         fontFamily: "exo2bold",
-                                        fontSize: "28px",
-                                        color: "#fff"
+                                        fontSize: "26px",
+                                        color: "#fff",
+                                        textDecoration: "none",
                                     }}>Etherscan</a>
                             </li>
                         </div>
