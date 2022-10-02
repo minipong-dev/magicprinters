@@ -439,9 +439,9 @@ function App() {
                             </li>
                         </div>
                         
-                        {/* <a href="" class="topnav-right nav-tab">AAA</a>
-                        <a href="" class="topnav-right nav-tab">BBB</a>
-                        <a href="" class="topnav-right nav-tab">CCC</a> */}
+                        <a href="https://twitter.com/MagicPrinters" class="topnav-right nav-tab">Twitter</a>
+                        <a href={CONFIG.MARKETPLACE_LINK} class="topnav-right nav-tab">Opensea</a>
+                        <a href={CONFIG.SCAN_LINK} class="topnav-right nav-tab">Etherscan</a>
                     </nav>
 
                     <s.SpacerLarge/>
@@ -911,9 +911,9 @@ function App() {
                             <a target="_blank" href={CONFIG.SCAN_LINK}>
                                 <LogoButtonImg src="/config/images/SCAN_LOGO.png" />
                             </a>
-                            <a target="_blank" href="https://medium.com/">
+                            {/* <a target="_blank" href="https://medium.com/">
                                 <LogoButtonImg src="/config/images/MEDIUM_LOGO.png" />
-                            </a>
+                            </a> */}
                             <br />
                             <br />
                             <a style={{
