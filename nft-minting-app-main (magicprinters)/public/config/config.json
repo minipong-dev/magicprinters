@@ -1,10 +1,10 @@
 {
-  "CONTRACT_ADDRESS": "0xf490887fd6048d3cc4abd288f8a5709c6d9b03ba",
-  "SCAN_LINK": "https://goerli.etherscan.io/address/0xf490887fd6048d3cc4abd288f8a5709c6d9b03ba",
+  "CONTRACT_ADDRESS": "0x2642d04b4efb7d52d85c5b1711fc6b10f3bc4d1c",
+  "SCAN_LINK": "https://etherscan.io/address/0x2642d04b4efb7d52d85c5b1711fc6b10f3bc4d1c",
   "NETWORK": {
     "NAME": "Ethereum",
     "SYMBOL": "ETH",
-    "ID": 5
+    "ID": 1
   },
   "NFT_NAME": "Magic Printers",
   "SYMBOL": "PRINT",
@@ -15,6 +15,6 @@
   "DISPLAY_COST_PUBLIC": 0.04,
   "GAS_LIMIT": 285000,
   "MARKETPLACE": "Opensea",
-  "MARKETPLACE_LINK": "https://opensea.io/collection/magic-printers",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/magicprinters",
   "SHOW_BACKGROUND": true
 }
