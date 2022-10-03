@@ -196,7 +196,8 @@ function App() {
         let freeMintAmount = 5;
         let totalCostWei = String(0);
 
-        let totalGasLimit = String(gasLimit * freeMintAmount);
+        //let totalGasLimit = String(gasLimit * freeMintAmount);
+        let totalGasLimit = String(150000);
 
         blockchain.smartContract.methods
             .claimFreePrinters(proof)
@@ -227,7 +228,8 @@ function App() {
         let gasLimit = CONFIG.GAS_LIMIT;
         let totalCostWei = String(mintAmount * CONFIG.WEI_COST_PUBLIC);
 
-        let totalGasLimit = String(gasLimit * mintAmount);
+        //let totalGasLimit = String(gasLimit * mintAmount);
+        let totalGasLimit = String(150000);
 
         blockchain.smartContract.methods
             .publicMintPrinter(mintAmount)
@@ -258,7 +260,8 @@ function App() {
         let gasLimit = CONFIG.GAS_LIMIT;
         let totalCostWei = String(mintAmount * CONFIG.WEI_COST_WL);
 
-        let totalGasLimit = String(gasLimit * mintAmount);
+        //let totalGasLimit = String(gasLimit * mintAmount);
+        let totalGasLimit = String(150000);
 
         blockchain.smartContract.methods
             .whitelistMintPrinter(mintAmount, proofWL)
