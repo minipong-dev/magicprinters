@@ -739,9 +739,7 @@ function App() {
                                         }}
                                     >
 
-                                        Public Mint: .04 ETH<br/>
-                                        Whitelist Mint: .03 ETH<br/>
-                                        All mints enabled at 1pm PST/4pm EST<br/>
+                                        Public Mint: .01 ETH<br/>
 
                                     </s.TextTitle>
                                     <s.SpacerXSmall />
