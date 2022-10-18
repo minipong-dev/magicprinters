@@ -867,7 +867,7 @@ function App() {
 
                                             <s.SpacerSmall />
 
-                                            <s.Container ai={"center"} jc={"center"} fd={"row"}>
+                                            {/* <s.Container ai={"center"} jc={"center"} fd={"row"}>
                                                 <StyledButton
                                                     disabled={claimingNft ? 1 : 0}
                                                     onClick={(e) => {
@@ -938,7 +938,7 @@ function App() {
                                                 >
                                                     {claimingNft ? "Processing..." : "Check Status"}
                                                 </StyledButton>
-                                            </s.Container>
+                                            </s.Container> */}
 
                                         </>
                                     )}
